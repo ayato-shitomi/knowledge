@@ -78,7 +78,7 @@ set wildmenu
 
 ### Norminette
 
-Norm
+Normをインストール後にPathがないと言われた場合、`.bashrc`などに以下を記述する
 
 ```.bashrc
 export PATH="$HOME/.local/bin:$PATH"
