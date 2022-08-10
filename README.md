@@ -3,6 +3,25 @@ Linux等の知識をメモする。
 
 知識は財産です。
 
+## Gitコマンド
+
+初めてのリポジトリを生成する。
+
+```bash
+> git init
+> git add .
+> git remote add origin <KEY>
+> git push origin master
+```
+
+### ブランチ関連
+
+```bash
+> git branch -a    # ブランチのリストを表示
+> git swich "ブランチ名"    # ブランチを切り替える
+> git merge ブランチ名    # 他のブランチから変更点を取り込む
+```
+
 ## Tmuxコマンド
 
 ### 基本操作
