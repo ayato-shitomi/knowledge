@@ -1,5 +1,7 @@
 # knowledge
-Linux等の知識をメモする
+Linux等の知識をメモする。
+
+知識は財産です。
 
 ## Tmuxコマンド
 
