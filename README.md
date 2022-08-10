@@ -85,3 +85,12 @@ Normをインストール後にPathがないと言われた場合、`.bashrc`な
 ```.bashrc
 export PATH="$HOME/.local/bin:$PATH"
 ```
+
+### 複数マシンでSSHキーを使いまわす
+
+> １）普段使用しているPCから秘密鍵をcat等で表示させて、コピーします。<br>
+> ２）コピー先のPCでid_rsaにコピーした秘密鍵を書き込む<br>
+> ３）コピーした先で`chmod 600 ~/.ssh/id_rsa && ssh-keygen -y -f ~/.ssh/id_rsa > ~/.ssh/id_rsa.pub`を実行<br>
+
+詳しくは以下に。
+https://qiita.com/LabPixel/items/d3e850144117eda2f1bd
