@@ -75,3 +75,11 @@ set hlsearch
 " Command line Autocomplete
 set wildmenu
 ```
+
+### Norminette
+
+Norm
+
+```.bashrc
+export PATH="$HOME/.local/bin:$PATH"
+```
