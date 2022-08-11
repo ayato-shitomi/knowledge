@@ -92,6 +92,7 @@ inoremap <<Enter> <><Left><CR><ESC><S-o><TAB>
 " Highlight
 set cursorline
 set hlsearch
+syntax enable
 
 " Command line Autocomplete
 set wildmenu
