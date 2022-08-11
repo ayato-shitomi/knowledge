@@ -147,3 +147,5 @@ Enter the new value, or press ENTER for the default
 	Login Shell [/bin/bash]: /usr/bin/fish
 ```
 
+## Linuxの権限
+
