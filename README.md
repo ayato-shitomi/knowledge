@@ -113,3 +113,15 @@ export PATH="$HOME/.local/bin:$PATH"
 
 詳しくは以下に。
 https://qiita.com/LabPixel/items/d3e850144117eda2f1bd
+
+### 42 Guacamole
+
+HomeBrewのインストール
+```zsh
+> curl -fsSL https://rawgit.com/kube/42homebrew/master/install.sh | zsh
+```
+
+Readlineのインストール
+```zsh
+brew install readline
+```
