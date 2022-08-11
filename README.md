@@ -46,7 +46,7 @@ ENTER     コピー
 Ctrl-b ]  ペースト
 ```
 
-### コンフィグファイル
+## コンフィグファイル
 
 ```
 # ~/.tmux.conf
@@ -98,7 +98,7 @@ syntax enable
 set wildmenu
 ```
 
-### Norminette
+## Norminette
 
 Normをインストール後にPathがないと言われた場合、`.bashrc`などに以下を記述する
 
@@ -106,7 +106,7 @@ Normをインストール後にPathがないと言われた場合、`.bashrc`な
 export PATH="$HOME/.local/bin:$PATH"
 ```
 
-### 複数マシンでSSHキーを使いまわす
+## 複数マシンでSSHキーを使いまわす
 
 > - 普段使用しているPCから秘密鍵をcat等で表示させて、コピーします。<br>
 > - コピー先のPCでid_rsaにコピーした秘密鍵を書き込む<br>
@@ -115,7 +115,7 @@ export PATH="$HOME/.local/bin:$PATH"
 詳しくは以下に。
 https://qiita.com/LabPixel/items/d3e850144117eda2f1bd
 
-### 42 Guacamole
+## 42 Guacamole
 
 HomeBrewのインストール
 ```zsh
@@ -126,3 +126,24 @@ Readlineのインストール
 ```zsh
 brew install readline
 ```
+
+## Shell関連
+
+### ログインShellを変更する
+
+Shellのパスを確認したあとに、`chsh`をして変更すればよい。
+
+```zsh
+ayato@ayato-VBox:~/$ echo $SHELL
+/bin/bash
+
+ayato@ayato-VBox:~/$ which fish
+/usr/bin/fish
+
+ayato@ayato-VBox:~/$ chsh
+Password: 
+Changing the login shell for ayato
+Enter the new value, or press ENTER for the default
+	Login Shell [/bin/bash]: /usr/bin/fish
+```
+
