@@ -1,9 +1,10 @@
 # knowledge
+
+<img src="src/knowledge.jpg">
+
 Linux等の知識をメモする。
 
 知識は財産です。（年間20万円までの知識には贈与税がかかりません）
-
-<img src="src/knowledge.jpg">
 
 ## Gitコマンド
 
