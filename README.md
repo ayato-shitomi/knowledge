@@ -161,5 +161,16 @@ Enter the new value, or press ENTER for the default
 yarnは`apt`でインストールしたらだめっす。
 
 ```zsh
-> npm install --global yarn
+> sudo npm install --global yarn
 ```
+### nのインストール
+
+`n`はNodeのバージョン管理ツール
+
+```bash
+> sudo npm install -g n
+```
+
+### firebase
+
+firebaseのインストールではNodeのバージョンが`14`必要な時がある。
