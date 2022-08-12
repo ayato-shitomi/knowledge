@@ -138,9 +138,13 @@ Readlineのインストール
 ```
 
 Fishのインストール
-
 ```zsh
 > brew install fish
+```
+
+tmuxのインストール
+```zsh
+> brew install tmux
 ```
 
 ## Shell関連
