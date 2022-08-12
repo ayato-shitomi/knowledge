@@ -125,6 +125,8 @@ https://qiita.com/LabPixel/items/d3e850144117eda2f1bd
 
 ## 42 Guacamole
 
+セットアップホストは`10.11.13.2`です～
+
 HomeBrewのインストール
 ```zsh
 > curl -fsSL https://rawgit.com/kube/42homebrew/master/install.sh | zsh
@@ -132,10 +134,22 @@ HomeBrewのインストール
 
 Readlineのインストール
 ```zsh
-brew install readline
+> brew install readline
+```
+
+Fishのインストール
+
+```zsh
+> brew install fish
 ```
 
 ## Shell関連
+
+### Fishの環境
+
+```
+> 
+```
 
 ### ログインShellを変更する
 
