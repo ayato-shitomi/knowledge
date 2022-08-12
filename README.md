@@ -152,6 +152,20 @@ Enter the new value, or press ENTER for the default
 	Login Shell [/bin/bash]: /usr/bin/fish
 ```
 
+### プロファイルや`.bashrc`などを即時反映させる
+
+Bashの場合
+
+```bash
+> source ~/.bashrc
+```
+
+Zshの場合
+
+```
+> source ~/.zshrc
+```
+
 ## Linuxの権限
 
 ## Firebase等の環境
