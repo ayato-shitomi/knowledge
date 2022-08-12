@@ -6,7 +6,7 @@ Linux等の知識をメモする。
 
 知識は財産です。（年間20万円までの知識には贈与税がかかりません）
 
-# Gitコマンド
+## Gitコマンド
 
 初めてのリポジトリを生成する。
 
@@ -17,7 +17,7 @@ Linux等の知識をメモする。
 > git push origin master
 ```
 
-## ブランチ関連
+### ブランチ関連
 
 ```bash
 > git branch -a    # ブランチのリストを表示
@@ -25,9 +25,9 @@ Linux等の知識をメモする。
 > git merge ブランチ名    # 他のブランチから変更点を取り込む
 ```
 
-# Tmuxコマンド
+## Tmuxコマンド
 
-## 基本操作
+### 基本操作
 
 ```
 Ctrl-b "    上下にペインを分割
@@ -38,7 +38,7 @@ Ctrl-b t    時間表示だってｗ
 Ctrl-b {    次のペインと現在のペインの位置を入れ替え
 ```
 
-## Tmuxコピーモード
+### Tmuxコピーモード
 
 システムのコピーモードはSHIFTを使えば良い
 
@@ -49,7 +49,7 @@ ENTER     コピー
 Ctrl-b ]  ペースト
 ```
 
-## コンフィグファイル
+### コンフィグファイル
 
 ```
 # ~/.tmux.conf
@@ -62,16 +62,16 @@ set -g mouse on
 set -g terminal-overrides 'xterm*:smcup@:rmcup@'
 ```
 
-# Vim
+## Vim
 
-## vimでの画面分割
+### vimでの画面分割
 
 ```
 :vs       分割
 ctrl+w w  ほかのペインへ移動
 ```
 
-## コンフィグファイル
+### コンフィグファイル
 
 行数表示する。自動補完、自動インデントをする。
 これである程度使いやすくなるはず！
@@ -101,7 +101,7 @@ syntax enable
 set wildmenu
 ```
 
-# Norminette
+## Norminette
 
 Normをインストール後にPathがないと言われた場合、`.bashrc`などに以下を記述する
 
@@ -109,9 +109,9 @@ Normをインストール後にPathがないと言われた場合、`.bashrc`な
 export PATH="$HOME/.local/bin:$PATH"
 ```
 
-# SSH
+## SSH
 
-## 複数マシンで同じキーを使う
+### 複数マシンで同じキーを使う
 
 > - 普段使用しているPCから秘密鍵をcat等で表示させて、コピーします。<br>
 > - コピー先のPCでid_rsaにコピーした秘密鍵を書き込む<br>
@@ -120,7 +120,7 @@ export PATH="$HOME/.local/bin:$PATH"
 詳しくは以下に。
 https://qiita.com/LabPixel/items/d3e850144117eda2f1bd
 
-# 42 Guacamole
+## 42 Guacamole
 
 HomeBrewのインストール
 ```zsh
@@ -132,9 +132,9 @@ Readlineのインストール
 brew install readline
 ```
 
-# Shell関連
+## Shell関連
 
-## ログインShellを変更する
+### ログインShellを変更する
 
 Shellのパスを確認したあとに、`chsh`をして変更すればよい。
 
@@ -152,11 +152,11 @@ Enter the new value, or press ENTER for the default
 	Login Shell [/bin/bash]: /usr/bin/fish
 ```
 
-# Linuxの権限
+## Linuxの権限
 
-# Firebase等の環境
+## Firebase等の環境
 
-## npmのインストール
+### npmのインストール
 
 npmはインストールしただけでは古い場合がある。
 
@@ -165,14 +165,14 @@ npmはインストールしただけでは古い場合がある。
 > sudo npm install -g npm
 ```
 
-## yarnのインストール
+### yarnのインストール
 
 yarnは`apt`でインストールしたらだめっす。
 
 ```bash
 > sudo npm install --global yarn
 ```
-## nのインストール
+### nのインストール
 
 `n`はNodeのバージョン管理ツール
 
@@ -180,11 +180,11 @@ yarnは`apt`でインストールしたらだめっす。
 > sudo npm install -g n
 ```
 
-## firebase
+### firebase
 
 firebaseのインストールではNodeのバージョンが`14`必要な時がある。
 
-## パッケージがない時
+### パッケージがない時
 
 ファンクションを走らせると、パッケージがないと言われるときがある。
 
@@ -194,9 +194,9 @@ firebaseのインストールではNodeのバージョンが`14`必要な時が�
 
 このコマンドで必要パッケージがインストールされる。
 
-# TypeScript
+## TypeScript
 
-## 型を定義してないプロパティを読み込んでは行けない (2339)
+### 型を定義してないプロパティを読み込んでは行けない (2339)
 
 以下のようなコードはエラーになる。
 
