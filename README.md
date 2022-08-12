@@ -156,11 +156,20 @@ Enter the new value, or press ENTER for the default
 
 ## Firebase等の環境
 
+### npmのインストール
+
+npmはインストールしただけでは古い場合がある。
+
+```bash
+> sudo apt install npm
+> sudo npm install -g npm
+```
+
 ### yarnのインストール
 
 yarnは`apt`でインストールしたらだめっす。
 
-```zsh
+```bash
 > sudo npm install --global yarn
 ```
 ### nのインストール
