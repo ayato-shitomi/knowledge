@@ -154,3 +154,12 @@ Enter the new value, or press ENTER for the default
 
 ## Linuxの権限
 
+## Firebase等の環境
+
+### yarnのインストール
+
+yarnは`apt`でインストールしたらだめっす。
+
+```zsh
+> npm install --global yarn
+```
