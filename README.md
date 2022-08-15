@@ -182,6 +182,19 @@ Enter the new value, or press ENTER for the default
 	Login Shell [/bin/bash]: /usr/bin/fish
 ```
 
+### 環境変数にコマンドの実行結果を保存する
+
+環境変数`$DATE`に`date`の結果を保存したい場合には以下のようにする。
+
+```bash
+> DATE=`date`
+```
+
+しかしながら、Fishの場合は`set`コマンドを使用して以下のようにする
+
+```fish
+> DATE (date)
+
 ### プロファイルや`.bashrc`などを即時反映させる
 
 Bashの場合
