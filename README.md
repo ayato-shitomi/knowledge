@@ -285,3 +285,9 @@ this.unko.getUnko().doUnko((unkoStruct : any) => {
 ```bash
 > kill 1
 ```
+
+## ショートカットキー
+
+### Chrome、Brave等で閉じたタブを復元する
+
+`Ctrl + Shift + C`
