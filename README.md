@@ -277,3 +277,11 @@ this.unko.getUnko().doUnko((unkoStruct : any) => {
   const unkoName = unko.name;
 });
 ```
+
+## Replit
+
+### サーバーを再起動したい
+
+```bash
+> kill 1
+```
