@@ -290,4 +290,4 @@ this.unko.getUnko().doUnko((unkoStruct : any) => {
 
 ### Chrome、Brave等で閉じたタブを復元する
 
-`Ctrl + Shift + C`
+`Ctrl + Shift + t`
