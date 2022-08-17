@@ -296,6 +296,12 @@ this.unko.getUnko().doUnko((unkoStruct : any) => {
 
 ### Discord Bot
 
+`Discord.py`のインストールが必要となる。
+
+```bash
+> python3 -m pip install -U discord.py
+```
+
 特定ユーザーにDMを送る
 
 ```python
