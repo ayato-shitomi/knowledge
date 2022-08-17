@@ -291,3 +291,15 @@ this.unko.getUnko().doUnko((unkoStruct : any) => {
 ### Chrome、Brave等で閉じたタブを復元する
 
 `Ctrl + Shift + t`
+
+## Python
+
+### Discord Bot
+
+特定ユーザーにDMを送る
+
+```python
+userId = xxx
+
+client.users.get(userId).send("MSG")
+```
