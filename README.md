@@ -294,6 +294,32 @@ this.unko.getUnko().doUnko((unkoStruct : any) => {
 
 ## Python
 
+### ファイル入出力
+
+```python
+# 第一引数に読みたいファイルパスを取る
+# 戻り地は内容が帰れば成功、"False"が失敗
+def getFile(filePath):
+    try:
+        f = open(filePath, 'r', encoding="UTF-8")
+        data = f.read()
+        f.close()
+        return data
+    except:
+        return False
+
+# 第一引数に読みたいファイル
+# 戻り地は"True"が成功、"False"が失敗
+def setFile(filePath, index):
+    try:
+        f = open(filePath, 'w', encoding="UTF-8")
+        f.write(index)
+        f.close()
+        return True
+    except:
+        return False
+```
+
 ### Discord Bot
 
 `Discord.py`のインストールが必要となる。
@@ -309,3 +335,4 @@ userId = xxx
 
 client.users.get(userId).send("MSG")
 ```
+
