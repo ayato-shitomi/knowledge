@@ -164,6 +164,19 @@ tmuxのインストール
 
 ## Shell関連
 
+### 出力の文字色を変更する
+
+```python
+print("Normal \x1b[31m RED \x1b[0m \tNormal")
+print("Normal \x1b[32m GREEN \x1b[0m \tNormal")
+```
+
+|コード|役割|
+|----|----|
+|`\x1b[31m`|文字色を赤に変更|
+|`\x1b[32m`|文字色を緑に変更|
+|`\x1b[0m`|文字色等の変更を元に戻す|
+
 ### ログインShellを変更する
 
 Shellのパスを確認したあとに、`chsh`をして変更すればよい。
