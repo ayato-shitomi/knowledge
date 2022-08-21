@@ -349,7 +349,7 @@ userId = xxx
 client.users.get(userId).send("MSG")
 ```
 
-### Cron
+## Cron
 
 クーロン、クロンタブ
 
