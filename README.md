@@ -377,6 +377,7 @@ cat /var/log/syslog
 ## imwheel
 
 マウスのスクロール速度がやばいときに使うといい。
+`/usr/bin/imwheel`をスタートアップに指定するとimwheelなしの生活に戻れない。
 
 ### インストール
 
