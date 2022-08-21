@@ -354,11 +354,22 @@ client.users.get(userId).send("MSG")
 クーロン、クロンタブ
 
 ```bash
+# 編集
 > sudo crontab -e
+
+# 再起動
+> /etc/init.d/cron restart
+
+# システムログを確認
+cat /var/log/syslog
 ```
 
 10分おきに実行したい場合には以下のようにする。
 
 ```cron
 */10 * * * * CMD
+```
+
+```cron
+* * * * * CMD > /var/log/git_push.log 2>&1
 ```
