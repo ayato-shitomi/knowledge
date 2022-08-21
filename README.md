@@ -373,3 +373,33 @@ cat /var/log/syslog
 ```cron
 * * * * * CMD > /var/log/git_push.log 2>&1
 ```
+
+## imwheel
+
+マウスのスクロール速度がやばいときに使うといい。
+
+### インストール
+
+```
+> sudo apt install imwheel
+```
+
+### 設定
+
+`~/.imwheelrc`
+
+```
+".*"
+None, Up, Button4, 3
+None, Down, Button5, 3
+```
+
+### 起動と管理
+
+```bash
+# 起動
+> imwheel
+
+# 設定を反映させる
+> imwheel -k
+```
