@@ -349,3 +349,16 @@ userId = xxx
 client.users.get(userId).send("MSG")
 ```
 
+### Cron
+
+クーロン、クロンタブ
+
+```bash
+> sudo crontab -e
+```
+
+10分おきに実行したい場合には以下のようにする。
+
+```cron
+*/10 * * * * CMD
+```
