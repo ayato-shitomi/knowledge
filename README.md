@@ -6,6 +6,20 @@ Linux等の知識をメモする。
 
 知識は財産です。（年間20万円までの知識には贈与税がかかりません）
 
+## Docker
+
+### Dockerプロセスの確認をする
+
+```bash
+> sudo docker ps
+```
+
+### Dockerプロセスに接続する
+
+```
+> sudo docker exec -it <NAME> /bin/bash
+```
+
 ## Gitコマンド
 
 初めてのリポジトリを生成する。
