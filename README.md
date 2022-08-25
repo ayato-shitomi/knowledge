@@ -12,7 +12,9 @@ Linux等の知識をメモする。
 
 ```bash
 > python3 -m pip install django
-> sudo apt install python3-django # 上のコマンドでできなかった場合にはこれを実行せよ
+
+# 上のコマンドでできなかった場合にはこれを実行せよ
+> sudo apt install python3-django
 ```
 
 
