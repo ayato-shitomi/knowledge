@@ -17,6 +17,18 @@ Linux等の知識をメモする。
 > sudo apt install python3-django
 ```
 
+### 新規アプリ作成と確認
+
+```bash
+> django-admin startproject <アプリ名>
+> cd <アプリ名>
+
+> python3 manage.py runserver
+```
+
+`http://127.0.0.1:8000/`とかにアクセスしてやれば、確認できる。
+URLがCLIに表示されます。
+`Ctrl-C`とかで止めてねって感じ。
 
 ## Docker
 
