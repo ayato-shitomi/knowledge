@@ -17,11 +17,11 @@ Linux等の知識をメモする。
 > sudo apt install python3-django
 ```
 
-### 新規アプリ作成と確認
+### 新規プロジェクトの作成と確認
 
 ```bash
-> django-admin startproject <アプリ名>
-> cd <アプリ名>
+> django-admin startproject <プロジェクト名>
+> cd <プロジェクト名>
 
 > python3 manage.py runserver
 ```
@@ -29,6 +29,54 @@ Linux等の知識をメモする。
 `http://127.0.0.1:8000/`とかにアクセスしてやれば、確認できる。
 URLがCLIに表示されます。
 `Ctrl-C`とかで止めてねって感じ。
+止めなくても自動反映されるからとても嬉しい！
+
+### 新規アプリケーションの作成
+
+```bash
+> python3 manage.py startapp <アプリ名>
+```
+
+最初にViewを作成する。
+
+`<アプリ名>/views.py`
+```python
+from django.http import HttpResponse
+from django.shortcuts import render
+
+# Create your views here.
+
+def index(reqest):
+	return HttpResponse("Hello world. You'r at the polls index.")
+```
+
+次にViewをURLに紐付ける。
+
+`<アプリ名>/urls.py`
+```python
+from django.urls import path
+from . import views
+
+urlpatterns = [
+	path('', views.index, name='index'),
+]
+```
+
+URLに対して、モジュールを反映させる。
+
+`<プロジェクト名>/urls.py`
+```
+from django.contrib import admin
+from django.urls import include, path
+
+urlpatterns = [
+    path('admin/', admin.site.urls),
+    path('<アプリ名>/', include('<アプリ名>.urls')),
+]
+```
+
+→ To Be Continued
+
 
 ## Docker
 
