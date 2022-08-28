@@ -2,8 +2,6 @@
 
 Linux等の知識をメモする。
 
-<img src="src/knowledge.jpg">
-
 知識は財産です。（年間20万円までの知識には贈与税がかかりません）
 
 ## Django
