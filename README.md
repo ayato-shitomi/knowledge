@@ -197,7 +197,7 @@ inoremap <<Enter> <><Left><CR><ESC><S-o><TAB>
 
 " Highlight
 set cursorline
-highlight CursorLine ctermbg=LightBlue
+highlight CursorLine ctermbg=8
 set hlsearch
 syntax enable
 
