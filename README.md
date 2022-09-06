@@ -373,6 +373,10 @@ yarnは`apt`でインストールしたらだめっす。
 
 ### firebase
 
+```zsh
+> npm install -g firebase
+```
+
 firebaseのインストールではNodeのバージョンが`14`必要な時がある。
 
 ### パッケージがない時
