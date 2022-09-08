@@ -287,6 +287,7 @@ print("Normal \x1b[31m RED \x1b[0m \tNormal")
 print("Normal \x1b[32m GREEN \x1b[0m \tNormal")
 ```
 
+
 |コード|役割|
 |----|----|
 |`\x1b[31m`|文字色を赤に変更|
