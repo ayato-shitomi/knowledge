@@ -4,6 +4,17 @@ Linux等の知識をメモする。
 
 知識は財産です。（年間20万円までの知識には贈与税がかかりません）
 
+## 解凍
+
+|拡張子|コマンド|
+|---|---|
+|`.tar.gz`, `.tgz`|`tar -xzvf`|
+|`.tar.bz2`, `.tbz`|`tar -xjvf`|
+|`.gz`|`gunzip`, `gzip -d`|
+|`.bz2`|`bzip2 -d`|
+|`.lha`, `.lzh`|`lha x`|
+|`.zip`|`unzip`|
+
 ## Django
 
 ### インストール
